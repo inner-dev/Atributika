@@ -82,6 +82,11 @@ open class AttributedLabel: UIView {
             updateText()
         }
     }
+
+    open var textViewBackgroundColor: UIColor? {
+        set { textView.backgroundColor = newValue }
+        get { return textView.backgroundColor }
+    }
     
     //MARK: - init
     public override init(frame: CGRect) {
